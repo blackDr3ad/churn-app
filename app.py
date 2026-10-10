@@ -18,7 +18,7 @@ internet = s.selectbox("Servicio de internet", ["DSL", "Fiber optic", "No"])
 tech = s.selectbox("Soporte técnico", ["No", "Yes", "No internet service"])
 pay = s.selectbox("Método de pago", ["Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"])
 paperless = s.selectbox("Factura electrónica", ["Yes", "No"])
-senior = s.selectbox("Adulto mayor (65+)", ["No", "Yes"])
+senior = s.selectbox("Adulto mayor (65+)", ["No", "Sí"])
 
 cliente = pd.DataFrame([{"tenure": tenure, "MonthlyCharges": monthly, "Contract": contract,
                          "InternetService": internet, "TechSupport": tech, "PaymentMethod": pay,
