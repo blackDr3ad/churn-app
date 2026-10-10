@@ -1,9 +1,9 @@
 import streamlit as st, pandas as pd, joblib, matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Riesgo de abandono", page_icon="📉")
+st.set_page_config(page_title="Riesgo de abandono")
 modelo = joblib.load("modelo_churn.joblib")
 
-st.title("📉 Probabilidad de que un cliente abandone")
+st.title("Probabilidad de que un cliente abandone")
 st.write("""**¿Qué hace?** Usa una *regresión logística* entrenada con el dataset Telco Customer Churn
 para estimar la probabilidad de que un cliente cancele su servicio.
 **¿Cómo usarla?** Ingresa los datos del cliente en la barra lateral y mira el resultado y el gráfico.""")
